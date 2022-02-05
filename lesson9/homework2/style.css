@@ -44,7 +44,6 @@ li {
   float: right;
   margin-top: -60px;
   margin-right: -40px;
- 
 }
 
 .earear_left {
@@ -53,7 +52,6 @@ li {
   width: 40px;
   margin-top: -60px;
   margin-left: -40px;
-  
 }
 
 .eyeeye_right {
@@ -65,7 +63,6 @@ li {
   margin-left: 40px;
   margin-right: 40px;
   float: right;
-  position: static;
 }
 
 .eyeeye_left {
@@ -76,5 +73,4 @@ li {
   margin-top: 80px;
   margin-left: 40px;
   margin-right: 40px;
-  position: static;
 }
