@@ -12,17 +12,18 @@
     />
     <title>Document</title>
     <style>
-      .inline-elements {
+      .oll-inputs {
+        box-sizing: border-box;
         margin: 32px;
       }
 
-      input {
+      div {
         margin: 8px;
       }
     </style>
   </head>
   <body>
-    <form class="inline-elements">
+    <form class="oll-inputs">
       <div>
         <input type="text" name="primaryLanguage" placeholder="HTML" disabled />
       </div>
@@ -39,7 +40,68 @@
         <input type="date" name="birhtDate" value="2021-01-02" />
       </div>
       <div>
-          <input type="datetime-local" name="birthTime" >
+        <input
+          type="datetime-local"
+          name="birthTime"
+          value="2024-10-04T13:02"
+        />
+      </div>
+      <div>
+        <input type="email" name="emale" placeholder="example@domain.com" />
+      </div>
+      <div>
+        <input type="file" name="avatar" />
+      </div>
+      <div>
+        <input type="month" name="startLearning" value="2021-01" />
+      </div>
+      <div>
+        <input type="number" name="favouriteNumber" value="17" />
+      </div>
+      <div>
+        <textarea
+          name="story"
+          placeholder="A long time ago..."
+          rows="5"
+          cols="30"
+        ></textarea>
+      </div>
+      <div>
+        <input type="password" name="password" value="secret" />
+      </div>
+      <div>
+        <input type="radio" name="Lenguage" />HTML
+        <input type="radio" name="Lenguage" checked />CSS
+        <input type="radio" name="Lenguage" />JavaScript
+      </div>
+      <div>
+        <input type="range" name="LearningProgress" value="30" />
+      </div>
+      <div>
+        <select name="framework">
+          <option value="react">React</option>
+          <option value="jquery">jQuery</option>
+          <option value="bootstrap">Bootstrap</option>
+        </select>
+      </div>
+      <div>
+        <input
+          type="search"
+          name="search"
+          placeholder="Type first letters..."
+        />
+      </div>
+      <div>
+        <input type="time" name="lunchEnd" value="14:01" />
+      </div>
+      <div>
+        <input type="url" name="website" placeholder="https://website.com" readonly/>
+      </div>
+      <div>
+        <input type="week" name="birthWeek" value="2021-w51" />
+      </div>
+      <div>
+        <button type="submit">Save</button>
       </div>
     </form>
   </body>
