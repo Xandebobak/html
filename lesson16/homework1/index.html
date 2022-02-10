@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
+    />
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body {
+        background-color: bisque;
+        font-family: monospace;
+        font-size: 16px;
+      }
+      .login-form {
+        margin: 145px auto 0;
+        background-color: aqua;
+        width: 300px;
+        padding: 16px;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .form-input {
+        margin: 8px;
+        height: 32px;
+        width: 96%;
+        border-radius: 4px;
+        border: 1px solid #808080;
+        padding: 4px;
+        outline: none;
+      }
+      .form-input:invalid:required {
+       border: 3px solid #ff0000;
+      }
+
+      .form-label {
+        margin: 4px;
+      }
+
+      .submit-button {
+        height: 32px;
+        width: 100%;
+        margin-top: 16px;
+        background-color: #ff7f50;
+        color: white;
+        border-radius: 4px;
+        text-transform: uppercase;
+        border: 1px solid coral;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="page">
+      <form class="login-form">
+        <h1 class="form-title">Login</h1>
+        <div class="form-control">
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="mail@example.com"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label class="form-label" for="userName">Full Name</label>
+          <input class="form-input" type="text" id="userName" name="userName"required />
+        </div>
+        <div class="form-control">
+          <label class="form-label" for="password">Password</label>
+          <input
+            class="form-input"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
