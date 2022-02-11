@@ -10,42 +10,50 @@
       crossorigin="anonymous"
     />
     <style>
-      *{
+      * {
         box-sizing: border-box;
       }
       body {
         background-color: bisque;
         font-family: monospace;
         font-size: 16px;
+        height: 100vh;
       }
+
+      .page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+
       .login-form {
-        margin: 145px auto 0;
         background-color: aqua;
         width: 300px;
         padding: 16px;
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
       }
 
-      h1 {
+      .form-title {
         text-align: center;
         text-transform: uppercase;
       }
 
       .form-input {
-        margin: 8px;
         height: 32px;
-        width: 96%;
+        width: 100%;
         border-radius: 4px;
         border: 1px solid #808080;
         padding: 4px;
         outline: none;
+        margin-bottom: 8px;
       }
       .form-input:invalid:required {
-       border: 3px solid #ff0000;
+        border: 3px solid #ff0000;
       }
 
       .form-label {
-        margin: 4px;
+        margin-bottom: 4px;
       }
 
       .submit-button {
@@ -78,7 +86,13 @@
         </div>
         <div class="form-control">
           <label class="form-label" for="userName">Full Name</label>
-          <input class="form-input" type="text" id="userName" name="userName"required />
+          <input
+            class="form-input"
+            type="text"
+            id="userName"
+            name="userName"
+            required
+          />
         </div>
         <div class="form-control">
           <label class="form-label" for="password">Password</label>
