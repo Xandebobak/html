@@ -32,20 +32,23 @@
         .submenu {
           display: block;
           position: absolute;
-          top: 45px;
+          top: 55px;
           background-color: #ff7f50;
-        }
-        .submenu__item {
-          list-style-type: none;
-          color: white;
-          width: 120px;
-          margin: 8px;
         }
       }
     }
-  }
 
-  .submenu {
-    display: none;
+    .submenu {
+      display: none;
+    }
+  }
+}
+.submenu__item {
+  list-style-type: none;
+  color: white;
+  width: 120px;
+  margin: 8px;
+  &:hover {
+    color: black;
   }
 }

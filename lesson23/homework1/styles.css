@@ -30,17 +30,21 @@
 .menu__item_active:hover .submenu {
   display: block;
   position: absolute;
-  top: 45px;
+  top: 55px;
   background-color: #ff7f50;
 }
-.menu__item_active:hover .submenu__item {
+.menu__item .submenu {
+  display: none;
+}
+
+.submenu__item {
   list-style-type: none;
   color: white;
   width: 120px;
   margin: 8px;
 }
-.menu .submenu {
-  display: none;
+.submenu__item:hover {
+  color: black;
 }
 
 * {
